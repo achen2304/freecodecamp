@@ -1,0 +1,8 @@
+ternary operator: const example = 
+    condition ? "I'm true" : "I'm false"
+optional chaining: Object?.value, When an object's value 
+    can equal to null or undefined, use this so it returns 
+    undefined or null instead of throwing error
+===: first checks if both vars are same types, then equality
+==: converts both var types to something common, then checks equality 
+callback function
