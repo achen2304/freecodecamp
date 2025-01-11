@@ -1,3 +1,5 @@
+empty callback function: () => {}; 
+implicit returns: (param) => condition;
 ternary operator: const example = 
     condition ? "I'm true" : "I'm false"
 optional chaining: Object?.value, When an object's value 
@@ -5,4 +7,21 @@ optional chaining: Object?.value, When an object's value
     undefined or null instead of throwing error
 ===: first checks if both vars are same types, then equality
 ==: converts both var types to something common, then checks equality 
-callback function
+
+dot(.) notation: object.val1 - returns the value1 of object 
+destructuring syntax: const { val1, val2 } = object;
+    sets val1 & val2 to the object's val1 & val2
+
+some fun methods:
+switch (condition) {
+    case1 "":
+    break
+    casex "";
+    break
+}
+
+split(""): splits up a string based on the input value into smaller strings
+reverse(): reverses the split string
+join(""): recreates the string pieces into one string
+
+Object.freeze("object-name"): makes the objects unchangable
