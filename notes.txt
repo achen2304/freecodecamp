@@ -12,7 +12,13 @@ dot(.) notation: object.val1 - returns the value1 of object
 destructuring syntax: const { val1, val2 } = object;
     sets val1 & val2 to the object's val1 & val2
 
-some fun methods:
+syntax stuff
+document.getElementBwyId("");
+element|const js|.addEventListener("event", () => action);
+    types of events: click, submit, 
+    2nd param could also be a previously made method
+array = [];
+object = {};
 switch (condition) {
     case1 "":
     break
@@ -25,3 +31,11 @@ reverse(): reverses the split string
 join(""): recreates the string pieces into one string
 
 Object.freeze("object-name"): makes the objects unchangable
+
+
+HTML methods/syntax:
+element.classList.add("");
+element.classList.remove("");
+element.classList.toggle("");
+modal --> popups after clicking a button I.E confirm changes
+
