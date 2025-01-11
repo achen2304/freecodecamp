@@ -26,7 +26,7 @@ switch (condition) {
     break
 }
 
-split(""): splits up a string based on the input value into smaller strings
+split(""): splits up a string based on the input value into an array of smaller strings
 reverse(): reverses the split string
 join(""): recreates the string pieces into one string
 
