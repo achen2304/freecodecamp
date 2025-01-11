@@ -13,7 +13,7 @@ destructuring syntax: const { val1, val2 } = object;
     sets val1 & val2 to the object's val1 & val2
 
 syntax stuff
-document.getElementBwyId("");
+document.getElementById("");
 element|const js|.addEventListener("event", () => action);
     types of events: click, submit, 
     2nd param could also be a previously made method
@@ -26,9 +26,12 @@ switch (condition) {
     break
 }
 
-split(""): splits up a string based on the input value into an array of smaller strings
-reverse(): reverses the split string
-join(""): recreates the string pieces into one string
+array.forEach(method): iterates thru all of the array
+
+string.split(""): splits up a string based on the input value into an array of smaller strings
+string.reverse(): reverses the split string
+string.join(""): recreates the string pieces into one string
+array.splice(startIndex, numElements, replacementText)
 
 Object.freeze("object-name"): makes the objects unchangable
 
@@ -37,5 +40,7 @@ HTML methods/syntax:
 element.classList.add("");
 element.classList.remove("");
 element.classList.toggle("");
+element.innerHTML = ""
 modal --> popups after clicking a button I.E confirm changes
 
+<button type="type" onclick="method(this)">text</button>
