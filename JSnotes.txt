@@ -1,17 +1,3 @@
-empty callback function: () => {}; 
-implicit returns: (param) => condition;
-ternary operator: const example = 
-    condition ? "I'm true" : "I'm false"
-optional chaining: Object?.value, When an object's value 
-    can equal to null or undefined, use this so it returns 
-    undefined or null instead of throwing error
-===: first checks if both vars are same types, then equality
-==: converts both var types to something common, then checks equality 
-
-dot(.) notation: object.val1 - returns the value1 of object 
-destructuring syntax: const { val1, val2 } = object;
-    sets val1 & val2 to the object's val1 & val2
-
 syntax stuff
 array = [];
 object = {};
@@ -21,6 +7,7 @@ switch (condition) {
     casex "";
     break
 }
+spread operator: [...array]: fully copies an array  
 array.forEach(method): iterates thru all of the array
 
 string.split(""): splits up a string based on the input value into an array of smaller strings
@@ -30,13 +17,21 @@ array.splice(startIndex, numElements, replacementText)
 
 Object.freeze("object-name"): makes the objects unchangable
 
-regex method: 
+regex method = /sentence/: automatically removes stuff i think, look at spam filter for example
 
 document.getElementById("");
+document.getElementsByClassName("")
+document.querySelector("")
+    "element.class"
+    ".class"
+    "#id"
 element|const js|.addEventListener("event", () => action);
     types of events: click, submit, 
     2nd param could also be a previously made method
 alert("text"): shows pop up on screen ("")
+
+<forms>: auto submit - use this method to prevent that:
+    event.preventDefault();
 
 localStorage.method("key", value);
     setItem("key", value):save item

@@ -1,0 +1,16 @@
+empty callback function: () => {}; 
+    fallback value: (var = ""): for writing algorithms that won't immediately have a return value
+
+implicit returns: (param) => condition;
+ternary operator: const example = 
+    condition ? "I'm true" : "I'm false"
+optional chaining: Object?.value, When an object's value 
+    can equal to null or undefined, use this so it returns 
+    undefined or null instead of throwing error
+===: first checks if both vars are same types, then equality
+==: converts both var types to something common, then checks equality 
+
+dot(.) notation: object.val1 - returns the value1 of object 
+destructuring syntax: const { val1, val2 } = object;
+    sets val1 & val2 to the object's val1 & val2
+
