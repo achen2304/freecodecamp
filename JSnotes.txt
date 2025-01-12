@@ -13,10 +13,6 @@ destructuring syntax: const { val1, val2 } = object;
     sets val1 & val2 to the object's val1 & val2
 
 syntax stuff
-document.getElementById("");
-element|const js|.addEventListener("event", () => action);
-    types of events: click, submit, 
-    2nd param could also be a previously made method
 array = [];
 object = {};
 switch (condition) {
@@ -25,7 +21,6 @@ switch (condition) {
     casex "";
     break
 }
-
 array.forEach(method): iterates thru all of the array
 
 string.split(""): splits up a string based on the input value into an array of smaller strings
@@ -35,12 +30,18 @@ array.splice(startIndex, numElements, replacementText)
 
 Object.freeze("object-name"): makes the objects unchangable
 
+regex method: 
 
-HTML methods/syntax:
-element.classList.add("");
-element.classList.remove("");
-element.classList.toggle("");
-element.innerHTML = ""
-modal --> popups after clicking a button I.E confirm changes
+document.getElementById("");
+element|const js|.addEventListener("event", () => action);
+    types of events: click, submit, 
+    2nd param could also be a previously made method
+alert("text"): shows pop up on screen ("")
 
-<button type="type" onclick="method(this)">text</button>
+localStorage.method("key", value);
+    setItem("key", value):save item
+    getItem("key"); retrieves item
+    removeItem("key")
+    clear(): deletes all 
+JSON.stringify(value) --> in the second param of localstorage
+JSON.parse(localStorage.method()) --> view in original form

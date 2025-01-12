@@ -1,0 +1,10 @@
+HTML methods/syntax:
+element.classList.add("");
+element.classList.remove("");
+element.classList.toggle("");
+element.innerHTML = ""
+modal --> popups after clicking a button I.E confirm changes
+element.parentElement.remove();
+element.innerText = "" 
+
+<button type="type" onclick="method(this)">text</button>
