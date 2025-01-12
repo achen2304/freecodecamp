@@ -9,9 +9,11 @@ button.addEventListener('click', () => {
 });
 
 const convertToRoman = (number) => {
-    if (number < 1) {
+    if (isNaN(number)) {
+        return 'Please enter a valid number';
+    } else if (number < 1) {
         return 'Please enter a number greater than or equal to 1';
-    } else if (number > 999) {
+    } else if (number > 3999) {
         return 'Please enter a number less than or equal to 3999';
     } else {
     let roman = '';
