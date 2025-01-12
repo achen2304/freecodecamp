@@ -9,8 +9,10 @@ switch (condition) {
 }
 spread operator: [...array]: fully copies an array  
 array.forEach(method): iterates thru all of the array
+array.map(): converts an array of strings into numbers
+array.filter(): filter elements of an array out
 
-string.split(""): splits up a string based on the input value into an array of smaller strings
+string.split(/regexvals/ || "string"): splits up a string based on the input value into an array of smaller strings
 string.reverse(): reverses the split string
 string.join(""): recreates the string pieces into one string
 array.splice(startIndex, numElements, replacementText)
