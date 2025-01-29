@@ -43,3 +43,8 @@ localStorage.method("key", value);
     clear(): deletes all 
 JSON.stringify(value) --> in the second param of localstorage
 JSON.parse(localStorage.method()) --> view in original form
+
+API stuff
+fetch("url") --> fetches data
+.then((res) => res.json) --> converts data into json/readable
+.then((data) => console.log(data)) --> logs all of the data in the console
