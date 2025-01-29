@@ -9,9 +9,11 @@ switch (condition) {
 }
 spread operator: [...array]: fully copies an array  
 array.forEach(method): iterates thru all of the array
-array.map(): converts an array of strings into numbers
+array.map((arrayvalue) => { arrayvalue changing function }): creates a new array based on a old one and the input callback
 array.filter(): filter elements of an array out
-{ const1, const2 } = ____: destructuring
+array.slice(startIndex, endingIndex): shortens array to values between the indexes
+{ const1, const2 } = ____: destructuring --> getting data from objects/arrays with the same name is 
+                            constants
 
 string.split(/regexvals/ || "string"): splits up a string based on the input value into an array of smaller strings
 string.reverse(): reverses the split string
@@ -19,6 +21,7 @@ string.join(""): recreates the string pieces into one string
 array.splice(startIndex, numElements, replacementText)
 
 Object.freeze("object-name"): makes the objects unchangable
+Object.hasOwnProperty(propName): checks if a object has a property
 
 regex method = /sentence/: automatically removes stuff i think, look at spam filter for example
 
