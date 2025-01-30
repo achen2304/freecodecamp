@@ -16,16 +16,18 @@ ALTER TABLE {table_name} {COMMAND}
     ADD COLUMN {column_name} {DATATYPE} {CONSTRAINT};
     DROP COLUMN {column_name};
     RENAME COLUMN {column_name} TO {new_name};
+    ADD PRIMARY KEY({column_name}); --> uniquely identifies each row 
+    DROP CONSTRAINT {constraint_name}; --> name found in \d {table}
 DROP TABLE {table_name};
 
 INSERT INTO table_name(column_1, column_2) VALUES(value1, value2);
-
 SELECT {columns} FROM {table_name}; queries data in a row "*" selects all
+    ORDER BY {column_name}; --> append to select
 DELETE FROM {table_name} WHERE {condition}; 
     condition can be: username='name'
 UPDATE table_name SET 
     column_name=new_value WHERE condition;
-    
+
 
 DATATYPES: 
     INT --> {number}
