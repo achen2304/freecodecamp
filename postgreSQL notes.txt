@@ -1,0 +1,33 @@
+psql --username={user} --dbname={name}
+\l : lists all databases
+\c {database name} : connects to database
+\d : displays table of database currently in
+\d {table name} :displays table info
+
+BASIC COMMAND name i guess; (basic setup to control Postgre, needs ";" at end)
+
+CREATE DATABASE {name};
+ALTER DATABASE database_name 
+    RENAME TO new_database_name;
+DROP DATABASE {name}; 
+
+CREATE TABLE {name}();
+ALTER TABLE {table_name} {COMMAND} 
+    ADD COLUMN {column_name} {DATATYPE} {CONSTRAINT};
+    DROP COLUMN {column_name};
+    RENAME COLUMN {column_name} TO {new_name};
+DROP TABLE {table_name};
+
+INSERT INTO table_name(column_1, column_2) VALUES(value1, value2);
+
+SELECT {columns} FROM {table_name}; queries data in a row "*" selects all
+DELETE FROM {table_name} WHERE {condition}; 
+    condition can be: username='name'
+UPDATE table_name SET 
+    column_name=new_value WHERE condition;
+    
+
+DATATYPES: 
+    INT --> {number}
+    VARCHAR(length) --> 'string' 
+    SERIAL --> int (not null)

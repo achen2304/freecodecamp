@@ -1,0 +1,21 @@
+pwd: print work directory (shows all files)
+cd filename: (moves into folders)
+ls: (shows all files in current directory)
+more filename: shows whats in a file
+clear: clears terminal
+cd .. (goes back a folder/directory)
+cd ../.. (goes back 2)
+find: shows file tree of folder
+command --help/flag
+
+mkdir foldername (make directory/folder)
+touch filename.___ (makes file)
+cp <file> <destination>: copies file to another foldere
+rm <file> (removes file)
+rmdir <directory> (removes directory)
+mv <filename> <new_filename>: rename or move something
+mv <file> <destination>
+
+flags:
+-a (all)
+-name <filename>
