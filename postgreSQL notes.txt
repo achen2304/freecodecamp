@@ -1,35 +1,61 @@
+-------- GENERIC COMMANDS ------------
 psql --username={user} --dbname={name}
 \l : lists all databases
 \c {database name} : connects to database
 \d : displays table of database currently in
 \d {table name} :displays table info
 
-BASIC COMMAND name i guess; (basic setup to control Postgre, needs ";" at end)
 
+------------- DB COMMANDS -----------------------
 CREATE DATABASE {name};
 ALTER DATABASE database_name 
     RENAME TO new_database_name;
 DROP DATABASE {name}; 
 
-CREATE TABLE {name}();
+------------ TABLE COMMANDS ---------------------
+CREATE TABLE {name}({column_name} DATATYPE CONSTRAINTS, ...);
 ALTER TABLE {table_name} {COMMAND} 
-    ADD COLUMN {column_name} {DATATYPE} {CONSTRAINT};
+    ADD COLUMN {column_name} {DATATYPE} {CONSTRAINTS};
+        REFERENCES {referencedTable}({ReferencedColumn}) --> foreign key to 2 tables
     DROP COLUMN {column_name};
     RENAME COLUMN {column_name} TO {new_name};
     ADD PRIMARY KEY({column_name}); --> uniquely identifies each row 
+        ({column1}, {column2}); --> composite primary key
     DROP CONSTRAINT {constraint_name}; --> name found in \d {table}
+    ADD UNIQUE({column_name}) --> used in relation with REFERENCES, links ONE row of each db
+    ADD FOREIGN KEY({column_name}) REFERENCES {table_name}({column_name}); --> foreign key to 2 tabls
 DROP TABLE {table_name};
 
-INSERT INTO table_name(column_1, column_2) VALUES(value1, value2);
-SELECT {columns} FROM {table_name}; queries data in a row "*" selects all
-    ORDER BY {column_name}; --> append to select
+CONSTRAINTS
+    SET NOT NULL; --> sets column so it can't be null
+    PRIMARY KEY; --> sets primary key to new column 
+    UNIQUE 
+
+------------ COLUMN COMMANDS ---------------------
+INSERT INTO table_name(column_1, column_2) {DATA TYPE}(val)
+    VALUES(value1, value2), (...,...); 
+        NULL --> no value inserted
+SELECT {column1, column2} FROM {table_name}; queries data in a row "*" selects all
+    ORDER BY {column_name}; --> append to select, use * as first var
+    WHERE condition --> name='string'
+    FULL JOIN table_2 ON {table_1}.{primary_key_column} = {table_2}.{foreign_key_column}; --> displays both tables together based on their key
+    {junction_table} FULL JOIN {table_1} ON {junction_table}.{foreign_key_column} = {table_1}.{primary_key_column} FULL JOIN ... --> can be used on multiple tables at once
 DELETE FROM {table_name} WHERE {condition}; 
     condition can be: username='name'
 UPDATE table_name SET 
     column_name=new_value WHERE condition;
 
-
 DATATYPES: 
     INT --> {number}
     VARCHAR(length) --> 'string' 
-    SERIAL --> int (not null)
+    SERIAL --> int, auto increments (not null)
+    DATE --> 'YYYY-MM-DD' format with '
+    NUMERIC(num1, num2); --> decimals
+
+JUNCTION TABLE --> table that connects 1+ tables together  
+
+galaxy --> id, galaxy_id, name, 
+star --> id, name, volume, mas, visual_brightness, by_earth
+planet --> id, name, volume, mass, num_moonss
+moon --> id, name, volume, mass, moon_id
+asteroids --> id, name, volume, mass, asteroid_id
