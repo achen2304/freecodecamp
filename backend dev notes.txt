@@ -1,0 +1,5 @@
+process.env.{costname} --> calls data from .env file
+https://mongoosejs.com/docs/index.html --> mongoose info
+
+{name: {$all: ['string']}} --> iterates thru aray of names to find 'string'
+data[num] --> only returns certain data (since methods return .json formatted arrays)
