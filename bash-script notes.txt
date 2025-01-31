@@ -1,0 +1,90 @@
+pwd: print work directory (shows all files)
+cd filename: (moves into folders)
+ls: (shows all files in current directory)
+more filename: shows whats in a file
+clear: clears terminal
+cd .. (goes back a folder/directory)
+cd ../.. (goes back 2)
+find: shows file tree of folder
+command --help/flag
+
+mkdir foldername (make directory/folder)
+touch filename.___ (makes file)
+cp <file> <destination>: copies file to another foldere
+rm <file> (removes file)
+rmdir <directory> (removes directory)
+mv <filename> <new_filename>: rename or move something
+mv <file> <destination>
+
+flags:
+-a (all)
+-name <filename>
+
+man <command> --> opens manual for variable
+
+{file_name}.sh --> used for shell commands
+sh {file_name}.sh --> runs commands in file
+bash {file_name}.sh --> runs commands in file (different interpreter)
+
+which bash --> finds location
+
+./{file_name}.sh {arg1} {...} --> runs file with arguments only if file has 
+    #!/{location of bash i.e bin/bash} <----> ALSO CALLED SHEBANG at top
+
+ls -l --> checks permission
+chmod +x {filename}.sh --> gives everyone executable perms 
+
+declare -p {variable} --> shows variable
+    -a --> all variabbles
+
+VARIABLENAME="" --> no spaces
+read VARIABLENAME --> reads the input from term
+$VARIABLENAME --> calls variable
+
+echo {commands} 
+    -e --> enables backslash commands in "string"
+        \n --> new line
+    $* --> prints all arguments
+    ${number} --> prints specific arugment
+if then statement
+    if [[ {CONDITION --> $1 -lt val} ]] 
+    then
+        {STATEMENTS}
+    elif 
+    then
+        {statements}
+    else
+        {STATEMENTS}
+    fi 
+for statement
+    for (( i = 10; i > 0; i-- ))
+    do
+    echo $i
+    done
+while statement
+    while [[ CONDITION ]]
+    do
+    STATEMENTS
+    done
+until loop 
+    until [[ CONDITION ]]
+    do
+    STATEMENTS
+    done
+
+comments
+    # {singe ling comment}
+    : '
+        long comment
+    '
+CONDITIONS 
+    -eq (equal), -ne (not equal), -lt (less than), -le (less than or equal), 
+    -gt (greater than), -ge (greater than or equal)
+
+FUNCTION_NAME() {
+  STATEMENTS
+}
+
+[[ expressions ]]; echo $? --> tests expression; returns true(0) or false(1)
+    || and && for multiple expressions 
+(( I-- )) --> math commands for I
