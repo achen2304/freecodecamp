@@ -1,0 +1,8 @@
+npm install 
+npm run start --> starts server on localhost:3000
+
+app.METHOD(PATH, (req, res, next) => { --> add next if middleware
+    HANDLER}) --> method is lowercase i.e get()
+
+app.get('/' ...)
+absolutePath = __dirname + '/relativePath/file.ext'
