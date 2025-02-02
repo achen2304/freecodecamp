@@ -1,0 +1,7 @@
+git commit -m "message"
+git push origin main
+
+git checkout -b branch-name -->  Create a new branch
+git checkout branch-name -->  Switch to a branch
+git merge branch-name //merge branch-name into the current branch --> Merge a branch
+git branch -d branch-name --> Delete a branch

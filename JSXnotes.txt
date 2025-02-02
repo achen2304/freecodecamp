@@ -1,0 +1,37 @@
+const JSX = (
+    <HTML CODE>
+    {/*<HTML COMMENT>*/}
+)
+ReactDOM.render(<componentToRender />, targetNode) 
+    targetNode = document.getElementById('id')
+    ReactDOM.render(<MyComponent />, document.getElementById('challenge-node'))
+className="{name}" --> use instead of class="{name}"
+<tag /> --> all tags need to close & can close internally
+
+const DemoComponent = function() {
+  return (
+    <div className='customClass' />
+  );
+};
+
+class Kitten extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <h1>Hi</h1>
+    );
+  }
+}
+
+return (
+ <App>
+  <Navbar />
+  <Dashboard />
+  <Footer />
+ </App>
+)
+
+----props-----
