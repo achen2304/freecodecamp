@@ -1,7 +1,12 @@
+stateless functional component --> func that accepts props
+stateless component --> extends React.Component but no internal state
+stateful component --> extends React.Component & has internal state
+
 const JSX = (
     <HTML CODE>
     {/*<HTML COMMENT>*/}
 )
+
 ReactDOM.render(<componentToRender />, targetNode) 
     targetNode = document.getElementById('id')
     ReactDOM.render(<MyComponent />, document.getElementById('challenge-node'))
@@ -17,11 +22,18 @@ const DemoComponent = function() {
 class Kitten extends React.Component {
   constructor(props) {
     super(props);
+    this.state {
+      json: thing
+    }
+    handleClick() { --> changes state based on a click me button
+      this.setState({ new: state })
+    }
+    this.method = this.method.bind(this)
   }
-
   render() {
+    {constants}
     return (
-      <h1>Hi</h1>
+      <h1>{this.state.json}</h1> --> returns the json
     );
   }
 }
@@ -34,4 +46,16 @@ return (
  </App>
 )
 
-----props-----
+----props-----> a way to have params in html 
+<App>
+  <Welcome user='Mark' />
+</App>
+const Welcome = (props) => <h1>Hello, {props.user}!</h1>
+{MyComponent}.defaultProps = { json: 'thing' } --> default prop creation
+
+-----------lifecycle methods--------- 
+componentWillMount() 
+componentDidMount() 
+shouldComponentUpdate() 
+componentDidUpdate() 
+componentWillUnmount()
