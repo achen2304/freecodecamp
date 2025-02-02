@@ -7,3 +7,6 @@ certificate link: https://www.freecodecamp.org/certification/fcccbbe069c-bfb8-42
 
 Relational Database
 certificate link: in progress
+
+Back End Development and APIs
+certificate link: https://www.freecodecamp.org/certification/fcccbbe069c-bfb8-42db-aad1-7655322fb15e/back-end-development-and-apis
