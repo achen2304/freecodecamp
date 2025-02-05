@@ -19,6 +19,7 @@ mv <file> <destination>
 flags:
 -a (all)
 -name <filename>
+-z <variable> checks null 
 
 man <command> --> opens manual for variable
 
@@ -33,6 +34,8 @@ which bash --> finds location
 
 ls -l --> checks permission
 chmod +x {filename}.sh --> gives everyone executable perms 
+
+cat {filename}.csv --> prints the file
 
 declare -p {variable} --> shows variable
     -a --> all variabbles
@@ -88,3 +91,10 @@ FUNCTION_NAME() {
 [[ expressions ]]; echo $? --> tests expression; returns true(0) or false(1)
     || and && for multiple expressions 
 (( I-- )) --> math commands for I
+
+PSQL="psql -X --username=freecodecamp --dbname=students --no-align --tuples-only -c"
+$($PSQL "<query_here>")
+cat courses.csv | while IFS="{,}"read MAJOR COURSE
+do
+  echo $MAJOR
+done

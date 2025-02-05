@@ -1,5 +1,6 @@
 -------- GENERIC COMMANDS ------------
 psql --username={user} --dbname={name}
+psql --username=freecodecamp --dbname=postgres
 \l : lists all databases
 \c {database name} : connects to database
 \d : displays table of database currently in
@@ -44,6 +45,7 @@ DELETE FROM {table_name} WHERE {condition};
     condition can be: username='name'
 UPDATE table_name SET 
     column_name=new_value WHERE condition;
+TRUNCATE {tablename} --> purges all data
 
 DATATYPES: 
     INT --> {number}
